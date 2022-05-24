@@ -15,15 +15,16 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home : Container(
-            color: Colors.blue,
+        home : Scaffold(
+          body: Container(
             child: const Center(
-                child: Text(
-                  'Mi primer widget',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(decoration: TextDecoration.none),
-                )
-            )
+              child: Text(
+                'Medicard',
+                textAlign: TextAlign.center,
+                style: TextStyle(decoration: TextDecoration.none),
+              ),
+            ),
+          ),
         )
     );
   }
