@@ -16,9 +16,6 @@ class _LogoutFormState extends State<LogoutForm> {
   String _fechaNacimiento='';
   String _sexo='';
   String _ciudad='';
-  String _correoElectronico='';
-  String _numeroCelular='';
-  String _documentoIdentidad='';
 
   _submit(){
     final isLogin = _formkey.currentState?.validate();
@@ -34,7 +31,7 @@ class _LogoutFormState extends State<LogoutForm> {
           InputText(
             label: 'Nombres',
             hint: 'Nombres',
-            icono: Icon(Icons.verified_user),
+            icono: Icon(Icons.supervised_user_circle),
             keyboard: TextInputType.name,
             obsecure: false,
             onChanged: (data) {
@@ -97,36 +94,6 @@ class _LogoutFormState extends State<LogoutForm> {
           Divider(
             height: 50.0,
           ),
-          InputText(
-            label: 'Correo Elctronico',
-            hint: 'Correo Elctronico',
-            icono: Icon(Icons.verified_user),
-            keyboard: TextInputType.datetime,
-            obsecure: false,
-            onChanged: (data) {
-              _segundoApellido = data;
-            },
-          ),
-          InputText(
-            label: 'Numero de celular',
-            hint: 'Numero de celular',
-            icono: Icon(Icons.verified_user),
-            keyboard: TextInputType.datetime,
-            obsecure: false,
-            onChanged: (data) {
-              _segundoApellido = data;
-            },
-          ),
-          InputText(
-            label: 'Documento de identidad',
-            hint: 'Documento de identidad',
-            icono: Icon(Icons.verified_user),
-            keyboard: TextInputType.datetime,
-            obsecure: false,
-            onChanged: (data) {
-              _segundoApellido = data;
-            },
-          ),
           Divider(
             height: 25.0,
           ),
@@ -134,14 +101,14 @@ class _LogoutFormState extends State<LogoutForm> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget> [
               FlatButton(
-                color: Colors.white,
+                color: Color.fromRGBO(67, 186, 193, 100),
                 onPressed: (){
-                  Navigator.pushNamed(context, 'user_page');
+                  Navigator.pushNamed(context, 'sing_up02');
                 },
                 child: Text(
-                  'CREAR CUENTA',
+                  'CONTINUAR',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 15.0,
                   ),
                 ),

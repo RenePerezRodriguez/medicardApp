@@ -31,7 +31,7 @@ class InputText extends StatelessWidget {
           hintText: hint,
           labelText: label,
           labelStyle: TextStyle(
-            color: Colors.white,
+            color: Colors.black,
             fontSize: 15.0
           ),
         )

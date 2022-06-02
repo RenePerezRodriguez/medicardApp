@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-            color: Color.fromRGBO(28, 107, 164, 100)
+            color: Colors.white
         ),
         child: ListView(
           padding: const EdgeInsets.symmetric(
@@ -36,14 +36,16 @@ class _HomePageState extends State<HomePage> {
                   'MEDICARD',
                   style: TextStyle(
                       fontSize: 30,
-                      color: Colors.white
+                      color: Colors.black,
+                    fontWeight: FontWeight.bold,
+
                   ),
                 ),
                 const Text(
                   'Seguros contigo',
                   style: TextStyle(
                       fontSize: 15,
-                      color: Colors.white
+                      color: Colors.black
                   ),
                 ),
                 const Divider(

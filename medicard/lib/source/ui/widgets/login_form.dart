@@ -58,15 +58,16 @@ class _LoginFormState extends State<LoginForm> {
             SizedBox(
               width: double.infinity,
               child: FlatButton(
-                color: Colors.white,
+                color: Color.fromRGBO(67, 186, 193, 100),
                 onPressed: (){
                   Navigator.pushNamed(context, 'user_page');
                 },
                 child: Text(
                   'Iniciar Sesion',
                   style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 15.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
@@ -77,7 +78,7 @@ class _LoginFormState extends State<LoginForm> {
                 Text(
                   'Aun no eres parte de medicard?',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 FlatButton(
@@ -87,7 +88,7 @@ class _LoginFormState extends State<LoginForm> {
                     child: Text(
                       'Crear Cuenta',
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Color.fromRGBO(230, 45, 40, 100),
                           fontWeight: FontWeight.bold,
                       ),
                     ),

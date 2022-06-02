@@ -16,7 +16,7 @@ class _SingUpState extends State<SingUp> {
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
-        color: Color.fromRGBO(28, 107, 164, 100)
+        color: Colors.white
     ),
     child: ListView(
       padding: const EdgeInsets.symmetric(
@@ -44,7 +44,7 @@ class _SingUpState extends State<SingUp> {
             Text(
               'INGRESE SU INFORMACION',
               style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontSize: 20.0
               ),

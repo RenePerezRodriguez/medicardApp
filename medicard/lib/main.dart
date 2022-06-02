@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:medicard/source/ui/pages/home_page.dart';
 import 'package:medicard/source/ui/pages/sing_up.dart';
+import 'package:medicard/source/ui/pages/sing_up02.dart';
+import 'package:medicard/source/ui/pages/terminos_condiciones.dart';
 import 'package:medicard/source/ui/pages/user_page.dart';
 import 'package:flutter/services.dart';
 
@@ -27,7 +29,10 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         'Home': (BuildContext context) => HomePage(),
         'user_page': (BuildContext) => UserPage(),
-        'sing_up': (BuildContext) => SingUp()
+        'sing_up': (BuildContext) => SingUp(),
+        'sing_up02': (BuildContext) => SingUp02(),
+        'terminos_condiciones': (BuildContext) => TerminosCondiciones()
+
       },
     );
   }
